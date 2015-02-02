@@ -8,13 +8,14 @@ public class MongoJackAddress {
 
 	@Id
 	private String objectId;
-	
+
 	private String address;
 	private String address2;
 	private String district;
 	private String city;
 	private String country;
 	private int postalCode;
+	private String phone;
 	private Date lastUpdate;
 
 	public String getObjectId() {
@@ -24,7 +25,7 @@ public class MongoJackAddress {
 	public void setObjectId(String objectId) {
 		this.objectId = objectId;
 	}
-	
+
 	public String getAddress() {
 		return address;
 	}
@@ -71,6 +72,14 @@ public class MongoJackAddress {
 
 	public void setPostalCode(int postalCode) {
 		this.postalCode = postalCode;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public Date getLastUpdate() {

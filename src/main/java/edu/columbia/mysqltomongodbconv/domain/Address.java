@@ -1,10 +1,19 @@
-package edu.columbia.mysqltomongodbconv.mybatis.domain;
+package edu.columbia.mysqltomongodbconv.domain;
 
 import java.util.Date;
 
-public class Address {
+import org.mongojack.Id;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class Address {
+	
+	@JsonIgnore
 	private int id;
+	
+	@Id
+	private String objectId;
+	
 	private String address;
 	private String address2;
 	private String district;
@@ -16,6 +25,14 @@ public class Address {
 
 	public int getId() {
 		return id;
+	}
+
+	public String getObjectId() {
+		return objectId;
+	}
+
+	public void setObjectId(String objectId) {
+		this.objectId = objectId;
 	}
 
 	public void setId(int id) {

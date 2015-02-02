@@ -13,9 +13,9 @@ and open the template in the editor.
     <properties resource="database.properties"/>
     
     <typeAliases>
-        <typeAlias type='edu.columbia.mysqltomongodbconv.mybatis.domain.Address' alias='Address'/>
-        <typeAlias type='edu.columbia.mysqltomongodbconv.mybatis.domain.Customer' alias='Customer'/>
-        <typeAlias type='edu.columbia.mysqltomongodbconv.mybatis.domain.Name' alias='Name'/>
+        <typeAlias type='edu.columbia.mysqltomongodbconv.domain.Address' alias='Address'/>
+        <typeAlias type='edu.columbia.mysqltomongodbconv.domain.Customer' alias='Customer'/>
+        <typeAlias type='edu.columbia.mysqltomongodbconv.domain.Name' alias='Name'/>
     </typeAliases>
     
     <environments default="development">

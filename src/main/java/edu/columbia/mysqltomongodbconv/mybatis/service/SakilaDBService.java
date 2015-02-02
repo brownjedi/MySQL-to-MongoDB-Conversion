@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
-import edu.columbia.mysqltomongodbconv.mybatis.domain.Address;
-import edu.columbia.mysqltomongodbconv.mybatis.domain.Customer;
+import edu.columbia.mysqltomongodbconv.domain.Address;
+import edu.columbia.mysqltomongodbconv.domain.Customer;
 import edu.columbia.mysqltomongodbconv.mybatis.mapper.SakilaDBMapper;
 import edu.columbia.mysqltomongodbconv.mybatis.util.MyBatisConnectionFactory;
 

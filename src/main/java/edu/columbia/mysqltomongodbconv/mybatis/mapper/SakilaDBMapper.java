@@ -2,8 +2,8 @@ package edu.columbia.mysqltomongodbconv.mybatis.mapper;
 
 import java.util.List;
 
-import edu.columbia.mysqltomongodbconv.mybatis.domain.Address;
-import edu.columbia.mysqltomongodbconv.mybatis.domain.Customer;
+import edu.columbia.mysqltomongodbconv.domain.Address;
+import edu.columbia.mysqltomongodbconv.domain.Customer;
 
 public interface SakilaDBMapper {
 

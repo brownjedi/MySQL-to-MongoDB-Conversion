@@ -1,4 +1,4 @@
-package edu.columbia.mysqltomongodbconv.mybatis.domain;
+package edu.columbia.mysqltomongodbconv.domain;
 
 public class Name {
 

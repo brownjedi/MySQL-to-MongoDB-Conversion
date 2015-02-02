@@ -1,29 +1,36 @@
-package edu.columbia.mysqltomongodbconv.mongojack.domain;
+package edu.columbia.mysqltomongodbconv.domain;
 
 import java.util.Date;
 
 import org.mongojack.Id;
 
-import edu.columbia.mysqltomongodbconv.mybatis.domain.Name;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class MongoJackCustomer {
-	
+public class Customer {
+
+	@JsonIgnore
+	private int id;
+
 	@Id
 	private String objectId;
-	
+
 	private Name name;
 	private String email;
-	private String addressId;
+
+	@JsonIgnore
+	private int addressId;
+	
+	private String addressObjectId;
 	private boolean active;
 	private Date createDate;
 	private Date lastUpdate;
 
-	public String getId() {
-		return objectId;
+	public int getId() {
+		return id;
 	}
 
-	public void setId(String objectId) {
-		this.objectId = objectId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public Name getName() {
@@ -42,12 +49,28 @@ public class MongoJackCustomer {
 		this.email = email;
 	}
 
-	public String getAddressObjectId() {
+	public int getAddressId() {
 		return addressId;
 	}
 
-	public void setAddressObjectId(String addressId) {
+	public void setAddressId(int addressId) {
 		this.addressId = addressId;
+	}
+
+	public String getObjectId() {
+		return objectId;
+	}
+
+	public void setObjectId(String objectId) {
+		this.objectId = objectId;
+	}
+
+	public String getAddressObjectId() {
+		return addressObjectId;
+	}
+
+	public void setAddressObjectId(String addressObjectId) {
+		this.addressObjectId = addressObjectId;
 	}
 
 	public boolean isActive() {
